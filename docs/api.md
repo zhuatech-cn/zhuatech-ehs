@@ -9,3 +9,4 @@
 | GET | `/api/admin/work-orders` | 安全巡检清单 |
 | GET | `/api/shopfloor/dashboard` | 工程师任务工作台 |
 | POST | `/api/shopfloor/work-orders/{id}/reports` | 提交巡检结论 |
+| POST | `/api/admin/incident-severity` | 事故事件严重度分级 |

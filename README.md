@@ -53,3 +53,7 @@ npm run dev:demo
 | ![知华科技微信二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![知华科技微信二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 关键词：EHS 系统源码、安全生产管理、隐患排查治理、事故事件管理、Java EHS、知华科技。
+
+## 事故严重度分级
+
+新增 `POST /api/admin/incident-severity`，综合受影响人数、医疗处置、误工、环境释放、财产损失、控制失效和重复事件计算严重度。重大事件会触发紧急响应，并返回救治、控制、报告与根因分析动作。
