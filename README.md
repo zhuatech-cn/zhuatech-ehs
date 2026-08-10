@@ -57,3 +57,7 @@ npm run dev:demo
 ## 事故严重度分级
 
 新增 `POST /api/admin/incident-severity`，综合受影响人数、医疗处置、误工、环境释放、财产损失、控制失效和重复事件计算严重度。重大事件会触发紧急响应，并返回救治、控制、报告与根因分析动作。
+
+## 作业许可准备度
+
+新增 `POST /api/ehs/insights/permit-to-work-readiness`。高风险作业开始前检查气体检测、上锁挂牌、人员资质、许可审批和应急预案，返回 `READY`、`PREPARE` 或 `BLOCK` 并列出缺失项，帮助现场负责人形成可追溯的开工门禁。
