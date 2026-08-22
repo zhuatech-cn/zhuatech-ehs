@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.ehs.service;
 import cn.zhuatech.ehs.common.BusinessException; import cn.zhuatech.ehs.dto.EhsDto.*; import cn.zhuatech.ehs.model.*; import cn.zhuatech.ehs.repository.*; import org.springframework.stereotype.Service; import org.springframework.transaction.annotation.Transactional; import java.util.*;
 @Service @Transactional(readOnly=true) public class EhsService {

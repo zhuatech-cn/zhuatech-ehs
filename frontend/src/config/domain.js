@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'EHS',systemName:'环境、健康与安全管理系统',englishName:'ENVIRONMENT HEALTH AND SAFETY',
  theme:{primary:'#277055',dark:'#183c30',accent:'#c4862b'},
