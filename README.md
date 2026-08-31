@@ -61,3 +61,7 @@ npm run dev:demo
 ## 作业许可准备度
 
 新增 `POST /api/ehs/insights/permit-to-work-readiness`。高风险作业开始前检查气体检测、上锁挂牌、人员资质、许可审批和应急预案，返回 `READY`、`PREPARE` 或 `BLOCK` 并列出缺失项，帮助现场负责人形成可追溯的开工门禁。
+
+## 企业级事故事件结案治理
+
+新增 `POST /api/enterprise/ehs/incident-closure-governance`，将现场遏制、证据保全、监管报告、根因、关键整改、员工沟通和有效性验证纳入结案门禁，返回 `CLOSE / REVIEW / BLOCKED`。详见 [事故结案治理说明](docs/ENTERPRISE_INCIDENT_CLOSURE.md)。
