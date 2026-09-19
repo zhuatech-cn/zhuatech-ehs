@@ -8,8 +8,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class PermitToWorkReadinessService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result evaluate(Request request) {
         int score = 100;
         if (!request.permitApproved()) score -= 35;
@@ -31,10 +37,16 @@ public class PermitToWorkReadinessService {
         return new Result(request.jobNo(), score, decision, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String jobNo, boolean highRiskWork,
                           boolean gasTestValid, boolean lockoutTagoutReady,
                           @Min(0) int trainedWorkers, @Min(1) int requiredWorkers,
                           boolean permitApproved, boolean emergencyPlanReady,
                           boolean simultaneousOperations) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String jobNo, int readinessScore, String decision, List<String> actions) {}
 }

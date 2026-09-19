@@ -6,11 +6,20 @@ import cn.zhuatech.ehs.service.PermitToWorkReadinessService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @RestController
 @RequestMapping("/api/ehs/insights")
 public class PermitToWorkReadinessController {
     private final PermitToWorkReadinessService service;
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public PermitToWorkReadinessController(PermitToWorkReadinessService service) { this.service = service; }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @PostMapping("/permit-to-work-readiness")
     public ApiResponse<PermitToWorkReadinessService.Result> evaluate(
         @Valid @RequestBody PermitToWorkReadinessService.Request request) {

@@ -10,8 +10,14 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class IncidentSeverityService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result assess(Request request) {
         int score = Math.min(100, Math.min(20, request.peopleAffected() * 5)
             + (request.medicalTreatment() ? 15 : 0) + (request.lostTime() ? 25 : 0)
@@ -28,11 +34,17 @@ public class IncidentSeverityService {
         return new Result(request.incidentNo(), score, severity, response, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String incidentNo, @Min(0) int peopleAffected,
                           boolean medicalTreatment, boolean lostTime,
                           boolean environmentalRelease,
                           @DecimalMin("0") BigDecimal propertyDamage,
                           boolean controlFailure, boolean repeatedIncident) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String incidentNo, int severityScore, String severity,
                          String response, List<String> actions) {}
 }
